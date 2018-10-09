@@ -1,0 +1,27 @@
+{
+    "name": "xcode/module-nicotinewarning",
+    "description": "this is a module for magento 2",
+    "type": "magento2-module",
+    "version": "1.0.2",
+    "license": [
+      "OSL-3.0",
+      "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Amin Mehrzad",         
+            "role": "Developer"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "XCode\\NicotineWarning\\": ""
+        }
+    }
+}
