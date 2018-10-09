@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<body>
+    <referenceContainer name="product.info.main">
+        <block class="XCode\NicotineWarning\Block\Product\View\Ext"
+            name="product.view.ext"
+            template="XCode_NicotineWarning::product/view/ext.phtml"
+            after="product.info.overview">
+        </block>
+    </referenceContainer>
+</body>
