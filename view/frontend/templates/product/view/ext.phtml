@@ -1,0 +1,10 @@
+<?php /* @var $block \XCode\NicotineWarning\Block\Product\View\Ext */?>
+<?php $_product = $block->getProduct() ?>
+
+<?php if ($_product->getData('nicotine_warning')): ?>
+
+<div style="padding:20px;text-align:center; border: 1px solid #333333;">
+	<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('avc_nw_block')->toHtml();?>
+</div>
+
+<?php endif; ?>
