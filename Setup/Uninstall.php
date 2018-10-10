@@ -3,7 +3,7 @@ namespace XCode\NicotineWarning\Setup;
 
 use Magento\Framework\Setup\UninstallInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
-use Magento\Framework\Setup\ModuleDataSetupInterface;
+use Magento\Framework\Setup\SchemaSetupInterface;
 
 
 class Uninstall implements UninstallInterface
@@ -13,7 +13,7 @@ class Uninstall implements UninstallInterface
     {
         $this->eavSetupFactory = $eavSetupFactory;
     }
-    public function uninstall(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
+    public function uninstall(SchemaSetupInterface $setup, ModuleContextInterface $context)
     {
 		$eavSetup = $this->eavSetupFactory->create();
 		$entityTypeId = 4;
