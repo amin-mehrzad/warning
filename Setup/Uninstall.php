@@ -15,7 +15,7 @@ namespace XCode\NicotineWremove\Setup {
             $setup->startSetup();    
             $eavSetup = $this->eavSetupFactory->create();    
             $entityTypeId = 4; // value for eav_entity_type table, here catalog_product value is 4
-            $eavSetup->removeAttribute($entityTypeId, 'nicotine_w');    
+            $eavSetup->removeAttribute($entityTypeId, 'nicotine_warning');    
             $setup->endSetup();    
         }
     }
